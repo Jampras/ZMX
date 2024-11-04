@@ -1,3 +1,20 @@
+/* Variáveis para cores */
+:root {
+    --background-light: linear-gradient(135deg, #e0e7ed, #cfd9df, #d1c4b2);
+    --background-dark: #111;
+    --text-light: #333;
+    --text-dark: #f4f4f4;
+    --accent-color: #0e66ca;
+    --header-light: rgba(255, 255, 255, 0.8);
+    --header-dark: rgba(17, 17, 17, 0.705);
+    --services-bg-light: linear-gradient(135deg, #d1c4b2, #f0f3f5);
+    --services-bg-dark: rgba(17, 17, 17, 0.705);
+    --about-us-bg-light: rgba(255, 255, 255, 0.6);
+    --about-us-bg-dark: rgba(34, 34, 34, 0.658);
+    --footer-light: linear-gradient(135deg, #cfd9df, #e0e7ed);
+    --footer-dark: #000000;
+}
+
 /* Estilos globais */
 * {
     margin: 0;
@@ -7,8 +24,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #e0e7ed, #cfd9df, #d1c4b2); /* Fundo com gradiente suave */
-    color: #333;
+    background: var(--background-light);
+    color: var(--text-light);
     line-height: 1.7;
     font-size: 16px;
     scroll-behavior: smooth;
@@ -16,7 +33,7 @@ body {
 
 /* Header */
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo claro e translúcido */
+    background-color: var(--header-light);
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -49,7 +66,7 @@ header .logo img {
 header .logo p {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-light);
 }
 
 header nav ul {
@@ -63,14 +80,14 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-light);
     font-weight: bold;
     transition: color 0.3s;
     font-size: 18px;
 }
 
 header nav ul li a:hover {
-    color: #0e66ca;
+    color: var(--accent-color);
 }
 
 /* Seção Hero */
@@ -81,7 +98,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #333;
+    color: var(--text-light);
     position: relative;
 }
 
@@ -90,7 +107,6 @@ header nav ul li a:hover {
     z-index: 1;
     max-width: 800px;
     padding: 20px;
-    text-align: center;
 }
 
 .hero h1 {
@@ -98,7 +114,7 @@ header nav ul li a:hover {
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--text-light);
     animation: fadeInDown 1.5s ease;
 }
 
@@ -117,7 +133,7 @@ header nav ul li a:hover {
 
 /* Sobre Nós */
 .about-us {
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--about-us-bg-light);
     padding: 80px 50px;
     text-align: center;
     border-radius: 15px;
@@ -128,7 +144,7 @@ header nav ul li a:hover {
 .about-us h2 {
     font-size: 36px;
     margin-bottom: 25px;
-    color: #333;
+    color: var(--text-light);
     animation: fadeInDown 1.5s ease;
 }
 
@@ -143,7 +159,7 @@ header nav ul li a:hover {
 
 /* Serviços */
 .services {
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--about-us-bg-light);
     padding: 80px 50px;
     text-align: center;
     border-radius: 15px;
@@ -154,7 +170,7 @@ header nav ul li a:hover {
 .services h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #333;
+    color: var(--text-light);
     animation: fadeInDown 1.5s ease;
 }
 
@@ -167,7 +183,7 @@ header nav ul li a:hover {
 }
 
 .services-item {
-    background: linear-gradient(135deg, #d1c4b2, #f0f3f5);
+    background: var(--services-bg-light);
     padding: 40px;
     border-radius: 15px;
     width: 300px;
@@ -181,19 +197,17 @@ header nav ul li a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.services-item h3 {
-    margin-bottom: 15px;
+.services-item h3, .services-item a {
     font-size: 22px;
-    color: #333;
+    color: var(--text-light);
 }
 
 .services-item a {
     text-decoration: none;
-    color: #333;
 }
 
 .services-item a:hover {
-    color: #0e66ca;
+    color: var(--accent-color);
 }
 
 .services-item p {
@@ -201,32 +215,12 @@ header nav ul li a:hover {
     color: #666;
 }
 
-/* Páginas Individuais de Serviços */
-.service-detail {
-    padding: 100px 50px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.service-detail h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.service-detail p {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.8;
-}
-
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #cfd9df, #e0e7ed);
+    background: var(--footer-light);
     padding: 60px 0;
     text-align: center;
-    color: #333;
+    color: var(--text-light);
 }
 
 .footer-logo img {
@@ -235,31 +229,56 @@ footer {
     margin-bottom: 20px;
 }
 
-footer p {
-    font-size: 16px;
+/* Modo Escuro */
+.dark-mode {
+    background: #111;
+    color: #f4f4f4;
 }
 
+.dark-mode header {
+    background-color: var(--header-dark);
+}
+
+.dark-mode .services-item {
+    background: var(--services-bg-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode .footer-logo img {
+    filter: brightness(0.8);
+}
+
+.dark-mode .hero {
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.9), rgba(20, 20, 20, 0.9)), url('f.jpg') center/cover no-repeat;
+}
+
+.dark-mode footer {
+    background: var(--footer-dark);
+}
+
+.dark-mode .about-us, .dark-mode .services {
+    background: var(--about-us-bg-dark);
+    color: var(--text-dark);
+}
+
+.dark-mode header,
+.dark-mode .hero h1,
+.dark-mode .about-us h2,
+.dark-mode .services h2,
+.dark-mode .services-item h3,
+.dark-mode .services-item p,
+.dark-mode footer p {
+    color: #ffffff; /* Tornar o texto mais claro no modo escuro */
+}
 /* Animações */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsividade */
@@ -273,7 +292,7 @@ footer p {
     }
 
     header nav ul {
-        display: none; 
+        display: none;
     }
 
     .hero h1 {
@@ -288,4 +307,30 @@ footer p {
         width: 90%;
         margin: 20px auto;
     }
+}
+
+/* Estilo do botão de alternância de tema */
+#theme-toggle {
+    background-color: #333; /* Cor de fundo escura */
+    color: #f4f4f4; /* Texto claro */
+    border: 1px solid #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #555;
+}
+
+/* Modo Escuro para o botão */
+.dark-mode #theme-toggle {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.dark-mode #theme-toggle:hover {
+    background-color: #ddd;
 }
