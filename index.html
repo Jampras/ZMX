@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- Cabeçalho -->
     <header>
         <div class="logo">
             <a href="index.html">
@@ -24,16 +25,14 @@
                 <li><a href="#servicos">Serviços</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle" onclick="toggleTheme()">Modo Escuro</button>
     </header>
     
-
     <!-- Seção Hero -->
     <section class="hero">
         <div class="hero-content">
             <h1>Porque Cuidamos de Você</h1>
-            
-            <div class="hero-buttons">
-            </div>
+            <div class="hero-buttons"></div>
         </div>  
     </section>
     
@@ -45,8 +44,8 @@
         </div>
     </section>
 
-    <!-- Seção de Serviços -->
-    <section id="servicos" class="services">
+      <!-- Seção de Serviços -->
+      <section id="servicos" class="services">
         <div class="services-content">
             <h2>O Que Fazemos</h2>
             <div class="services-carousel">
@@ -78,13 +77,23 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer>
         <div class="footer-logo">
             <img src="esquerda.jpg" alt="Brasão da Família Zanato">
         </div>
         <p>© 2024 ZMX-TAC. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Script para alternar o tema -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.getElementById("theme-toggle");
+            body.classList.toggle("dark-mode");
+            button.textContent = body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
+        }
+    </script>
 
 </body>
 </html>
