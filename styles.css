@@ -65,15 +65,15 @@ header nav ul li a:hover {
 
 /* Seção Hero */
 .hero {
-    background-image: url('hero-background.jpg');
+    background-image: url('f.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items:end;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #f0f0f0;
     position: relative;
 }
 
@@ -86,7 +86,10 @@ header nav ul li a:hover {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
-
+.P{
+    background-color: rgba(68, 68, 68, 0);
+    text-align: center;
+}
 .hero-content {
     position: relative;
     z-index: 1;
@@ -133,7 +136,7 @@ header nav ul li a:hover {
 
 /* Serviços */
 .services {
-    background-image: url('contato.jpg');
+    background-image: url('f.jpg');
     padding: 100px 50px;
 }
 
@@ -258,7 +261,7 @@ footer p {
 
 
 body {
-    background-image: url('hero-background.jpg');
+
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
