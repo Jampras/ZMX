@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia - ZMXaTAC</title>
+    <link rel="stylesheet" href="advocacia.css"> <!-- Link do CSS específico para advocacia -->
+</head>
+<body>
+
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="esquerda.jpg" alt="ZMX^TAC">
+            </a>
+            <p>ZMX^TAC</p>
+        </div>
+        <button id="theme-toggle" onclick="toggleTheme()">Modo Escuro</button>
+    </header>
+    
+
+    <!-- Seção de Introdução (Hero) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Serviços de Auditoria</h1>
+            <p>Oferecemos uma representação jurídica de excelência para proteger seus direitos e interesses em diversas áreas do Direito.</p>
+        </div>
+    </section>
+
+<!-- Seção de Serviços -->
+<section class="services">
+    <h2>Áreas de Atuação em Auditoria Jurídica</h2>
+    <div class="servicos-container">
+        <div class="servico-item">
+            <h3>Auditoria de Conformidade</h3>
+            <p>Avaliação de processos para assegurar que as atividades e políticas da empresa estejam em conformidade com as leis e regulamentações aplicáveis.</p>
+        </div>
+        <div class="servico-item">
+            <h3>Auditoria Contratual</h3>
+            <p>Exame de contratos e acordos para identificar riscos e garantir o cumprimento das obrigações contratuais.</p>
+        </div>
+        <div class="servico-item">
+            <h3>Auditoria Trabalhista</h3>
+            <p>Verificação das práticas trabalhistas da empresa para assegurar conformidade com a legislação e evitar passivos trabalhistas.</p>
+        </div>
+        <div class="servico-item">
+            <h3>Auditoria Fiscal</h3>
+            <p>Análise das práticas fiscais da organização para garantir conformidade com as obrigações tributárias e reduzir riscos de penalidades.</p>
+        </div>
+        <div class="servico-item">
+            <h3>Auditoria Ambiental</h3>
+            <p>Avaliação dos procedimentos ambientais da empresa para verificar conformidade com as normas ambientais e minimizar o impacto ecológico.</p>
+        </div>
+    </div>
+</section>
+
+        <!-- Script para alternar o tema -->
+        <script>
+            function toggleTheme() {
+                const body = document.body;
+                const button = document.getElementById("theme-toggle");
+                body.classList.toggle("dark-mode");
+                button.textContent = body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
+            }
+        </script>
+    
+
+</body>
+</html>
